@@ -1,0 +1,3 @@
+GPG URL: http://download.opensuse.org/distribution/leap/42.3/repo/oss/suse/repodata/repomd.xml.key
+GPG ID: 3DBDC284
+GPG FINGERPRINT: 22C0 7BA5 3417 8CD0 2EFE  22AA B88B 2FD4 3DBD C284
