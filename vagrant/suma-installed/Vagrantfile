@@ -9,9 +9,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     client.vm.provider "virtualbox" do |c|
       c.name = "suma-installed-client"
     end
-    # Comment the following line uncomment the next one if you want to grab the images from S3 instead of from the local server at the openSUSE conference
-    client.vm.box_url = "http://server.suse.inet/suma-installed-client.box"
-    #client.vm.box_url = "http://uyuni-ws.s3-website.eu-central-1.amazonaws.com/suma-installed-client.box"
+    client.vm.box_url = "http://uyuni-ws.s3-website.eu-central-1.amazonaws.com/suma-installed-client.box"
     client.vm.box = "suma-installed-client"
     client.vm.hostname = "client.example.local"
     client.vm.network "private_network", ip: client_ip
@@ -22,9 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       s.memory = 4096
       s.name = "suma-installed-server"
     end
-    # Comment the following line uncomment the next one if you want to grab the images from S3 instead of from the local server at the openSUSE conference
-    server.vm.box_url = "http://server.suse.inet/suma-installed-server.box"
-    #server.vm.box_url = "http://uyuni-ws.s3-website.eu-central-1.amazonaws.com/suma-installed-server.box"
+    server.vm.box_url = "http://uyuni-ws.s3-website.eu-central-1.amazonaws.com/suma-installed-server.box"
     server.vm.box = "suma-installed-server"
     server.vm.hostname = "suma-installed-server.example.local"
     server.vm.network "private_network", ip: server_ip

@@ -7,9 +7,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.name = "suma-rpms-server"
     v.memory = 4096
   end
-  # Comment the following line uncomment the next one if you want to grab the images from S3 instead of from the local server at the openSUSE conference
-  config.vm.box_url = "http://server.suse.inet/suma-rpms-server.box"
-  #config.vm.box_url = "http://uyuni-ws.s3-website.eu-central-1.amazonaws.com/suma-rpms-server.box"
+  config.vm.box_url = "http://uyuni-ws.s3-website.eu-central-1.amazonaws.com/suma-rpms-server.box"
   config.vm.box = "suma-rpms-server"
   config.vm.hostname = "suma-rpms-server.example.local"
   config.vm.network "forwarded_port", guest: 443, host: 8443
